@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    background-color: #313131;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.sub-container{
+    display: flex;
+
+    flex-direction: column;
+}
+.input-container{
+    margin-bottom: 0.5rem;
+}
+.input-container label{
+    font-weight: bold;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container-button{
+    margin-top: 2rem;
+}
+.container-value{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-button > button{
+    width: 8vw;
+    height: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+#sem-parceria{
+    background-color: rgb(226, 236, 83);
+    color: black;
+}
+#com-parceria{
+    background-color: rgb(73, 158, 80);
+}
+#sem-parceria:hover{
+    background-color: rgb(163, 170, 63);
+}
+#com-parceria:hover{
+    background-color: rgb(55, 121, 61);
+}

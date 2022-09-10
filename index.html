@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas - Egito</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h1>Vendas Egito</h1>
+            <img src="images/bandeira-egito.png" alt="">
+        </div>
+        <div class="sub-container">
+        <div class="input-container">
+            <label for="">Munição Five</label>
+            <input class="input-el" type="number" maxlength="6" data-parceria="9500" data-s-parceria="10500" data-parcela="100" placeholder="Digite a quantidade">
+        </div>
+        <div class="input-container">
+            <label for="">Munição Tec Nine</label>
+            <input class="input-el" type="number" maxlength="6" data-parceria="9500" data-s-parceria="10500" data-parcela="100" placeholder="Digite a quantidade">
+        </div>
+        <div class="input-container">
+            <label for="">Munição MTAR</label>
+            <input class="input-el" type="number" maxlength="6" data-parceria="9500" data-s-parceria="10500" data-parcela="100" placeholder="Digite a quantidade">
+        </div>
+        <div class="input-container">
+            <label for="">Munição AK 47</label>
+            <input class="input-el" type="number" maxlength="6" data-parceria="18900" data-s-parceria="21000" data-parcela="100" placeholder="Digite a quantidade">
+        </div>
+        <div class="input-container">
+            <label for="">Munição G3</label>
+            <input class="input-el" type="number" maxlength="6" data-parceria="18900" data-s-parceria="21000" data-parcela="100" placeholder="Digite a quantidade">
+        </div>
+        <div class="input-container">
+            <label for="">Colete</label>
+            <input class="input-el" type="number" maxlength="6" data-parceria="2250" data-s-parceria="2500" data-parcela="1" placeholder="Digite a quantidade">
+        </div>
+        <div class="container-button">
+            <button id="sem-parceria" onclick="getTotal(0)">Sem Parceria</button>
+            <button id="com-parceria" onclick="getTotal(1)">Com Parceria</button>
+        </div>
+        <div class="container-value">
+            <div>
+                <h3>Bruto:</h3>
+                <span id="valor-bruto"></span>
+            </div>
+            <div>
+                <h3>Comissão:</h3>
+                <span id="valor-comissao"></span>
+            </div>
+            <div>
+                <h3>Líquido:</h3>
+                <span id="valor-liquido"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="scripts/scripts.js"></script>
+
+</html>
