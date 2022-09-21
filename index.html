@@ -10,12 +10,16 @@
 </head>
 
 <body>
+    <div class="titulo">
+        <img class="mr-1" src="images/anubis.png" alt="">
+        <h1>Cálculo Produtos</h1>
+      
+    </div>
     <div class="container">
-        <div class="titulo">
-            <h1>Vendas Egito</h1>
-            <img src="images/bandeira-egito.png" alt="">
-        </div>
+        
         <div class="sub-container">
+        
+
         <div class="input-container">
             <label for="">Munição Five</label>
             <input class="input-el" type="number" maxlength="6" data-parceria="9500" data-s-parceria="10500" data-parcela="100" placeholder="Digite a quantidade">
@@ -45,20 +49,22 @@
             <button id="com-parceria" onclick="getTotal(1)">Com Parceria</button>
         </div>
         <div class="container-value">
-            <div>
+            <div class="radius-result">
                 <h3>Bruto:</h3>
                 <span id="valor-bruto"></span>
             </div>
-            <div>
+            <div class="radius-result">
                 <h3>Comissão:</h3>
                 <span id="valor-comissao"></span>
             </div>
-            <div>
+            <div class="radius-result">
                 <h3>Líquido:</h3>
                 <span id="valor-liquido"></span>
             </div>
         </div>
     </div>
+    
+    
     </div>
 </body>
 <script src="scripts/scripts.js"></script>

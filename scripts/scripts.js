@@ -1,5 +1,4 @@
 const inputEl = document.getElementsByClassName('input-el')
-let arrValue = []
 for(i = 0; i < inputEl.length; i++)
 {
     let input = inputEl[i]
@@ -8,8 +7,6 @@ for(i = 0; i < inputEl.length; i++)
         {
             input.value = input.value.slice(0, input.maxLength)
         }
-        
-     
     })
 }
 
@@ -21,9 +18,7 @@ function getTotal(number){
         let valor = number == 1 ? input.getAttribute('data-parceria') : input.getAttribute('data-s-parceria')
         total += (input.value / input.getAttribute('data-parcela')) * valor
         setValue(total)
-
     }
-
 }
 
 
