@@ -1,64 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vendas - Egito</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="titulo">
-        <img class="mr-1" src="images/anubis.png" alt="">
-        <h1>Cálculo Produtos</h1>
-      
+      <img class="mr-1" src="images/anubis.png" alt="" />
+      <h1>Cálculo Produtos</h1>
     </div>
     <div class="container">
-        
-        <div class="sub-container">
-        
-
-        <div class="input-container">
+        <div class="options mb-1">
+            <div class="opt" data-show="venda">Venda</div>
+            <div class="opt" data-show="farm">Farm</div>
+        </div>
+       <div class="sub-container">
+        <div class="content-box mb-1">
+          <div class="check-partner mb-1">
+            <input type="checkbox" name="partner" id="isPartner" />
+            <label class="notPartner" for="partner" id="isPartnerLabel">Sem parceria</label>
+          </div>
+          <div class="input-container">
             <label for="">Munição Pistola</label>
-            <input class="input-el" type="number" maxlength="6" data-parceria="5400" data-s-parceria="6000" data-parcela="100" placeholder="Digite a quantidade">
-        </div>
-        <div class="input-container">
+            <input
+              class="input-el"
+              type="number"
+              maxlength="6"
+              data-parceria="5400"
+              data-s-parceria="6000"
+              data-parcela="100"
+              placeholder="Digite a quantidade"
+            />
+          </div>
+          <div class="input-container">
             <label for="">Munição SMG</label>
-            <input class="input-el" type="number" maxlength="6" data-parceria="5400" data-s-parceria="6000" data-parcela="100" placeholder="Digite a quantidade">
-        </div>
-        <div class="input-container">
+            <input
+              class="input-el"
+              type="number"
+              maxlength="6"
+              data-parceria="5400"
+              data-s-parceria="6000"
+              data-parcela="100"
+              placeholder="Digite a quantidade"
+            />
+          </div>
+          <div class="input-container">
             <label for="">Munição Rifle</label>
-            <input class="input-el" type="number" maxlength="6" data-parceria="8100" data-s-parceria="9000" data-parcela="100" placeholder="Digite a quantidade">
-        </div>
-        <div class="input-container">
+            <input
+              class="input-el"
+              type="number"
+              maxlength="6"
+              data-parceria="8100"
+              data-s-parceria="9000"
+              data-parcela="100"
+              placeholder="Digite a quantidade"
+            />
+          </div>
+          <div class="input-container">
             <label for="">Colete</label>
-            <input class="input-el" type="number" maxlength="6" data-parceria="1800" data-s-parceria="2000" data-parcela="1" placeholder="Digite a quantidade">
-        </div>
-        <div class="container-button">
-            <button id="sem-parceria" onclick="getTotal(0)">Sem Parceria</button>
-            <button id="com-parceria" onclick="getTotal(1)">Com Parceria</button>
+            <input
+              class="input-el"
+              type="number"
+              maxlength="6"
+              data-parceria="1800"
+              data-s-parceria="2000"
+              data-parcela="1"
+              placeholder="Digite a quantidade"
+            />
+          </div>
         </div>
         <div class="container-value">
-            <div class="radius-result">
-                <h3>Bruto:</h3>
-                <span id="valor-bruto"></span>
-            </div>
-            <div class="radius-result">
-                <h3>Comissão:</h3>
-                <span id="valor-comissao"></span>
-            </div>
-            <div class="radius-result">
-                <h3>Líquido:</h3>
-                <span id="valor-liquido"></span>
-            </div>
+          <div class="radius-result">
+            <h3>Bruto:</h3>
+            <span id="valor-bruto">0</span>
+          </div>
+          <div class="radius-result">
+            <h3>Comissão:</h3>
+            <span id="valor-comissao">0</span>
+          </div>
+          <div class="radius-result">
+            <h3>Líquido:</h3>
+            <span id="valor-liquido">0</span>
+          </div>
         </div>
+      </div>
+      <div class="sub-container d-none">
+        <div class="content-box mb-2">
+          <div class="input-container">
+            <label for="">Calcular Farm</label>
+            <input
+              class="input-farm"
+              type="number"
+              maxlength="6"
+              data-farm="75"
+              placeholder="Digite a quantidade"
+            />
+          </div>
+        </div>
+        <div class="container-value">
+          <div class="radius-result">
+            <h3>Pagamento:</h3>
+            <span id="farm-payment">0</span>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    
-    </div>
-</body>
-<script src="scripts/scripts.js"></script>
-
+  </body>
+  <script src="scripts/scripts.js"></script>
 </html>
